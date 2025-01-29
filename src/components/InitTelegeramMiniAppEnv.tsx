@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { mockTelegramEnv } from "@telegram-apps/bridge";
 import { miniApp } from "@telegram-apps/sdk";
 
-export const InitTelegeramMiniAppEnv: React.FC = () => {
+export const InitTelegramMiniAppEnv: React.FC = () => {
   const initDevEnv = () => {
     try {
       console.debug("init mini app")
@@ -63,7 +63,7 @@ export const InitTelegeramMiniAppEnv: React.FC = () => {
         ]).toString(),
         version: '7.2',
         platform: 'tdesktop',
-      });
+      } as any);
     }
 
     if (miniApp.bindCssVars.isAvailable()) {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { InitTelegeramMiniAppEnv } from "@/components/InitTelegeramMiniAppEnv";
+import { InitTelegramMiniAppEnv } from "@/components/InitTelegeramMiniAppEnv";
 
 export const metadata: Metadata = {
   title: "Telegram-mini-app",
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <InitTelegeramMiniAppEnv/>
+    <InitTelegramMiniAppEnv/>
       <body>
         {children}
       </body>
