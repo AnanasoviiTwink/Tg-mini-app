@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --tg-bgColor: red;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,4 +13,8 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+.telegram-gb-color {
+  color: var(--tg-bgColor);
 }

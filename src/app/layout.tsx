@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { InitTelegeramMiniAppEnv } from "@/components/InitTelegeramMiniAppEnv";
 
 export const metadata: Metadata = {
   title: "Telegram-mini-app",
@@ -14,9 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    <InitTelegeramMiniAppEnv/>
       <body>
         {children}
       </body>
+      {/*<script src={"https://telegram.org/js/telegram-web-app.js?56"}></script>*/}
     </html>
   );
 }

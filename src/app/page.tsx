@@ -1,8 +1,11 @@
+"use client";
+
+import { useEffect } from "react";
 
 export default function Home() {
   return (
     <>
-    <p>Hello telegram</p>
+    <p className={'telegram-gb-color'}>Hello telegram</p>
     </>
   );
 }
