@@ -1,12 +1,13 @@
 "use client";
 import React, { useEffect } from "react";
 import { mockTelegramEnv } from "@telegram-apps/bridge";
-import { miniApp } from "@telegram-apps/sdk";
+import { init, miniApp } from "@telegram-apps/sdk";
 
 export const InitTelegramMiniAppEnv: React.FC = () => {
   const initDevEnv = () => {
     try {
       console.debug("init mini app")
+      init()
       miniApp.ready();
     } catch (e) {
       console.debug("mock mini app")
